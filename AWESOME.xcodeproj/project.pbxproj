@@ -12,6 +12,14 @@
 		A57852F82194A4DC00B319DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57852F72194A4DC00B319DA /* Assets.xcassets */; };
 		A57852FB2194A4DC00B319DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57852F92194A4DC00B319DA /* LaunchScreen.storyboard */; };
 		A57853032194B04000B319DA /* AwesomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57853022194B04000B319DA /* AwesomeViewController.swift */; };
+		A5A6D3A7219DEBA200741D2B /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6D3A6219DEBA200741D2B /* ScrollViewController.swift */; };
+		A5B8472721A71A6C00C4AD3A /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B8472621A71A6C00C4AD3A /* TableView.storyboard */; };
+		A5B8472B21A71B7300C4AD3A /* TableExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8472A21A71B7300C4AD3A /* TableExampleViewController.swift */; };
+		A5B8472E21A720A900C4AD3A /* AwesomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8472C21A720A900C4AD3A /* AwesomeTableViewCell.swift */; };
+		A5B8472F21A720A900C4AD3A /* AwesomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B8472D21A720A900C4AD3A /* AwesomeTableViewCell.xib */; };
+		A5B8473121A727FF00C4AD3A /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B8473021A727FF00C4AD3A /* Collection.storyboard */; };
+		A5B8473321A7288300C4AD3A /* AwesomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8473221A7288300C4AD3A /* AwesomeCollectionViewController.swift */; };
+		A5B8473521A728D000C4AD3A /* AwesomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8473421A728D000C4AD3A /* AwesomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		A57852FA2194A4DC00B319DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A57852FC2194A4DC00B319DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A57853022194B04000B319DA /* AwesomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeViewController.swift; sourceTree = "<group>"; };
+		A5A6D3A6219DEBA200741D2B /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		A5B8472621A71A6C00C4AD3A /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
+		A5B8472A21A71B7300C4AD3A /* TableExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableExampleViewController.swift; sourceTree = "<group>"; };
+		A5B8472C21A720A900C4AD3A /* AwesomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeTableViewCell.swift; sourceTree = "<group>"; };
+		A5B8472D21A720A900C4AD3A /* AwesomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AwesomeTableViewCell.xib; sourceTree = "<group>"; };
+		A5B8473021A727FF00C4AD3A /* Collection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
+		A5B8473221A7288300C4AD3A /* AwesomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeCollectionViewController.swift; sourceTree = "<group>"; };
+		A5B8473421A728D000C4AD3A /* AwesomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +71,45 @@
 			isa = PBXGroup;
 			children = (
 				A57852F02194A4D900B319DA /* AppDelegate.swift */,
-				A57852F42194A4D900B319DA /* Main.storyboard */,
-				A57853022194B04000B319DA /* AwesomeViewController.swift */,
+				A5B8472821A71AFB00C4AD3A /* Basic UI */,
+				A5B8472921A71B1300C4AD3A /* Table view */,
 				A57852F72194A4DC00B319DA /* Assets.xcassets */,
 				A57852F92194A4DC00B319DA /* LaunchScreen.storyboard */,
 				A57852FC2194A4DC00B319DA /* Info.plist */,
+				A5B8473021A727FF00C4AD3A /* Collection.storyboard */,
+				A5B8473221A7288300C4AD3A /* AwesomeCollectionViewController.swift */,
+				A5B8473421A728D000C4AD3A /* AwesomeCollectionViewCell.swift */,
 			);
 			path = AWESOME;
+			sourceTree = "<group>";
+		};
+		A5B8472821A71AFB00C4AD3A /* Basic UI */ = {
+			isa = PBXGroup;
+			children = (
+				A57852F42194A4D900B319DA /* Main.storyboard */,
+				A57853022194B04000B319DA /* AwesomeViewController.swift */,
+				A5A6D3A6219DEBA200741D2B /* ScrollViewController.swift */,
+			);
+			name = "Basic UI";
+			sourceTree = "<group>";
+		};
+		A5B8472921A71B1300C4AD3A /* Table view */ = {
+			isa = PBXGroup;
+			children = (
+				A5B8820D21B98BA1004902DD /* Cells */,
+				A5B8472621A71A6C00C4AD3A /* TableView.storyboard */,
+				A5B8472A21A71B7300C4AD3A /* TableExampleViewController.swift */,
+			);
+			name = "Table view";
+			sourceTree = "<group>";
+		};
+		A5B8820D21B98BA1004902DD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A5B8472C21A720A900C4AD3A /* AwesomeTableViewCell.swift */,
+				A5B8472D21A720A900C4AD3A /* AwesomeTableViewCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +170,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5B8473121A727FF00C4AD3A /* Collection.storyboard in Resources */,
 				A57852FB2194A4DC00B319DA /* LaunchScreen.storyboard in Resources */,
+				A5B8472F21A720A900C4AD3A /* AwesomeTableViewCell.xib in Resources */,
 				A57852F82194A4DC00B319DA /* Assets.xcassets in Resources */,
+				A5B8472721A71A6C00C4AD3A /* TableView.storyboard in Resources */,
 				A57852F62194A4D900B319DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5B8472B21A71B7300C4AD3A /* TableExampleViewController.swift in Sources */,
 				A57853032194B04000B319DA /* AwesomeViewController.swift in Sources */,
+				A5B8473521A728D000C4AD3A /* AwesomeCollectionViewCell.swift in Sources */,
 				A57852F12194A4D900B319DA /* AppDelegate.swift in Sources */,
+				A5A6D3A7219DEBA200741D2B /* ScrollViewController.swift in Sources */,
+				A5B8473321A7288300C4AD3A /* AwesomeCollectionViewController.swift in Sources */,
+				A5B8472E21A720A900C4AD3A /* AwesomeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

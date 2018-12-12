@@ -23,6 +23,7 @@ class AwesomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        debugPrint("1 viewDidLoad \(nameLabel.frame)")
         
         let screenSize = UIScreen.main.bounds.size
         let center = CGPoint(x: screenSize.width/2, y: screenSize.height/2)
@@ -41,6 +42,25 @@ class AwesomeViewController: UIViewController {
         button.addTarget(self, action: #selector(clearName), for: .touchUpInside)
         
         view.addSubview(button)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        debugPrint("2 viewWillAppear  \(nameLabel.frame)")
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        debugPrint("3 viewWillLayoutSubviews \(nameLabel.frame)")
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        debugPrint("4 viewDidLayoutSubviews \(nameLabel.frame)")
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        debugPrint("5 viewDidAppear \(nameLabel.frame)")
     }
     
     @objc func clearName(_ sender: UIButton) {
